@@ -8,7 +8,7 @@ const app = express();
 const client = new Client({
     user: 'dbmasteruser',          // Usuario de PostgreSQL
     host: 'ls-ef6cea836d847f09c85f3d354ae9db50bd1912c5.c1a60uoi6neh.us-east-1.rds.amazonaws.com',           // Host de la base de datos (o IP del servidor)
-    database: 'gdb_3030',       // Nombre de la base de datos
+    database: 'gdb_3040',       // Nombre de la base de datos
     password: 'x|8)]Xu5q6&[^8Ps[OiMDo*NppV5!H1g',   // Contraseña del usuario
     port: 5432, 
     ssl: {
@@ -35,7 +35,6 @@ app.get('/', (req, res) => {
 });
 
 //Endpoints
-// Endpoint para consultar todas las tablas del esquema public
 // Endpoint para consultar todas las tablas del esquema public
 app.get('/tablas', async (req, res) => {
   try {
